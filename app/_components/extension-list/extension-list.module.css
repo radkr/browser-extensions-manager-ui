@@ -1,0 +1,5 @@
+.extensionList {
+  list-style: none;
+  display: grid;
+  row-gap: 12px;
+}

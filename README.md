@@ -48,7 +48,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 ### Iteration 1
 
-TODO
+See the styled page on my mobile device.
 
 ## What I learned
 
