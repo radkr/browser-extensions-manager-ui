@@ -4,7 +4,7 @@ export default function ControlBar() {
   return (
     <div className={styles.controlBar}>
       <h1 className={styles.title}>Extensions List</h1>
-      <div>
+      <div className={styles.filter}>
         <button className={`${styles.button} ${styles.buttonActive}`}>
           All
         </button>

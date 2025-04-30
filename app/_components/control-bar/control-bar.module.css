@@ -10,22 +10,29 @@
   justify-content: center;
   align-content: center;
 }
+
 .title {
   font-size: 32px;
   font-weight: 700;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 16px;
 }
 
 .button {
   appearance: none;
   font-family: var(--font-noto-sans);
   font-size: 20px;
+  letter-spacing: -0.2px;
   background-color: var(--neutral-0);
   height: 45px;
-  margin: 0 6px;
   border: none;
   border-radius: 22px;
-  padding: 0 20px;
-  box-shadow: 0 0 6px 0 var(--neutral-300);
+  padding: 0 18px;
+  box-shadow: 0 0 4px 0 var(--neutral-300);
 }
 
 .button:focus-visible {
@@ -48,4 +55,11 @@
   background-color: var(--red-500);
   color: var(--neutral-0);
   cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .controlBar {
+    margin: 64px 0 34px 0;
+    justify-content: space-between;
+  }
 }

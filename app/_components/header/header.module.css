@@ -26,3 +26,10 @@
   background-color: var(--neutral-300);
   cursor: pointer;
 }
+
+@media (min-width: 1000px) {
+  .header {
+    padding: 12px 16px;
+    border-radius: 20px;
+  }
+}

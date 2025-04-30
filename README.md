@@ -13,6 +13,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Tested with](#tested-with)
   - [Iterations](#iterations)
     - [Iteration 1](#iteration-1)
+    - [Iteration 2](#iteration-2)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 
@@ -49,6 +50,10 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 ### Iteration 1
 
 See the styled page on my mobile device.
+
+### Iteration 2
+
+See the styled page on my desktop device.
 
 ## What I learned
 

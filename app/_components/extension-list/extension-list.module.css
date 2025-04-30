@@ -3,3 +3,11 @@
   display: grid;
   row-gap: 12px;
 }
+
+@media (min-width: 1000px) {
+  .extensionList {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+}
