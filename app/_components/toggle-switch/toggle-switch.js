@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import styles from "./toggle-switch.module.css";
 
-export default function ToggleSwitch({ on }) {
+export default function ToggleSwitch({ on, onToggle }) {
   const [isOn, setIsOn] = useState(on);
 
   return (
@@ -12,6 +12,7 @@ export default function ToggleSwitch({ on }) {
       className={`${styles.button} ${isOn && styles.buttonOn}`}
       onClick={() => {
         setIsOn((prev) => !prev);
+        onToggle();
       }}
     >
       <div className={styles.thumb} />

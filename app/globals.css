@@ -112,6 +112,7 @@
 
 body {
   background: var(--color-background);
+  min-height: 100vh;
   margin: 0 auto;
   /*itemMinWidth + 2 *sidePadding*/
   min-width: calc(288px + 2 * 16px);

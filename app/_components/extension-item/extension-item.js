@@ -1,9 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { use } from "react";
+import { ExtensionsContext } from "@/app/_utils/extensions-provider";
 
 import styles from "./extension-item.module.css";
 import ToggleSwitch from "../toggle-switch/toggle-switch";
 
 export default function ExtensionItem({ extension }) {
+  const { toggleActive } = use(ExtensionsContext);
+
   console.log("From item:", extension);
 
   return (
@@ -26,7 +32,12 @@ export default function ExtensionItem({ extension }) {
       </div>
       <div className={styles.controlBox}>
         <button className={styles.remove}>Remove</button>
-        <ToggleSwitch on />
+        <ToggleSwitch
+          on={extension.isActive}
+          onToggle={() => {
+            toggleActive(extension.name);
+          }}
+        />
       </div>
     </li>
   );

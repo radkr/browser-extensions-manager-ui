@@ -16,6 +16,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
     - [Iteration 2](#iteration-2)
     - [Iteration 3](#iteration-3)
     - [Iteration 4](#iteration-4)
+    - [Iteration 5](#iteration-5)
   - [What I learned](#what-i-learned)
     - [Touchscreen devices and sticky hover](#touchscreen-devices-and-sticky-hover)
   - [Useful resources](#useful-resources)
@@ -37,7 +38,9 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 - CSS custom properties, Grid, Flexbox
 - Mobile-first workflow
 - Responsive design (media query)
-- Next.js + React.js
+- Dark theme (next-theme)
+- Next.js (server and client components)
+- React.js (Context API)
 
 ## Improved with
 
@@ -65,6 +68,10 @@ See the styled page on my tablet device.
 ### Iteration 4
 
 Switch between dark mode and light mode.
+
+### Iteration 5
+
+Filter for active or inactive extensions and set an extension to active or inactive.
 
 ## What I learned
 

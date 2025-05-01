@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Header from "./_components/header/header";
 import ControlBar from "./_components/control-bar/control-bar";
 import ExtensionList from "./_components/extension-list/extension-list";
+import ExtensionsProvider from "./_utils/extensions-provider";
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
         <Header />
       </header>
       <main>
-        <ControlBar />
-        <ExtensionList />
+        <ExtensionsProvider>
+          <ControlBar />
+          <ExtensionList />
+        </ExtensionsProvider>
       </main>
     </>
   );
