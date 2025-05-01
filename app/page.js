@@ -7,10 +7,14 @@ import ExtensionList from "./_components/extension-list/extension-list";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <ControlBar />
-      <ExtensionList />
-    </main>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <ControlBar />
+        <ExtensionList />
+      </main>
+    </>
   );
 }

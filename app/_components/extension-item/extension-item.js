@@ -22,7 +22,7 @@ export default function ExtensionItem({ extension }) {
       </div>
       <div className={styles.controlBox}>
         <button className={styles.remove}>Remove</button>
-        <ToggleSwitch />
+        <ToggleSwitch on />
       </div>
     </li>
   );

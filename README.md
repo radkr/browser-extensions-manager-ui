@@ -14,6 +14,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Iterations](#iterations)
     - [Iteration 1](#iteration-1)
     - [Iteration 2](#iteration-2)
+    - [Iteration 3](#iteration-3)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 
@@ -31,9 +32,9 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 ## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties, Grid, Flexbox
 - Mobile-first workflow
-- Responsive design
+- Responsive design (media query)
 - Next.js + React.js
 
 ## Improved with
@@ -54,6 +55,10 @@ See the styled page on my mobile device.
 ### Iteration 2
 
 See the styled page on my desktop device.
+
+### Iteration 3
+
+See the styled page on my tablet device.
 
 ## What I learned
 

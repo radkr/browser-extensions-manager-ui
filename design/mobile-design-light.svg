@@ -36,7 +36,7 @@
      showguides="true"
      inkscape:zoom="2.56"
      inkscape:cx="194.53125"
-     inkscape:cy="380.46875"
+     inkscape:cy="224.60938"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -769,5 +769,19 @@
        d="M 95.759651,283.69345 H 114.52152"
        id="path885"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#0000ff;stroke:#0b00f8;stroke-width:1.00157"
+       d="M 311.71875,85.2702 V 270.1261"
+       id="path445" />
+    <text
+       xml:space="preserve"
+       style="font-weight:200;font-size:10.6667px;font-family:dosis;-inkscape-font-specification:'dosis Ultra-Light';text-align:center;text-anchor:middle;fill:#0000ff;stroke:#0b00f8;stroke-width:1.00157"
+       x="325.39062"
+       y="108.714"
+       id="text501"><tspan
+         sodipodi:role="line"
+         id="tspan499"
+         x="325.39062"
+         y="108.714">184px</tspan></text>
   </g>
 </svg>

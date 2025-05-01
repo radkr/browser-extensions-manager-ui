@@ -5,11 +5,11 @@ import styles from "./header.module.css";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <div className={styles.header}>
       <Image src={logoImage} alt="Extensions logo" />
       <button className={styles.themeButton} aria-label="Switch to dark mode">
         <Image src={moonIcon} alt="Moon Icon" />
       </button>
-    </header>
+    </div>
   );
 }

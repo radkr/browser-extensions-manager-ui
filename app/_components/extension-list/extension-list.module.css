@@ -1,13 +1,21 @@
 .extensionList {
   list-style: none;
   display: grid;
+  justify-content: center;
+  column-gap: 12px;
   row-gap: 12px;
 }
 
-@media (min-width: 1000px) {
+/*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
+@media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
   .extensionList {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 12px;
-    row-gap: 12px;
+    grid-template-columns: auto auto;
+  }
+}
+
+/*3 * itemMinWidth + 2 * columnGap + 2 * pagePadding*/
+@media (min-width: calc(3 * 288px + 2 * 12px + 2 * 16px)) {
+  .extensionList {
+    grid-template-columns: auto auto auto;
   }
 }

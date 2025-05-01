@@ -57,7 +57,8 @@
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
+/*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
+@media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
   .controlBar {
     margin: 64px 0 34px 0;
     justify-content: space-between;

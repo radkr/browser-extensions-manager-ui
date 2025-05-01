@@ -27,7 +27,8 @@
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
+/*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
+@media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
   .header {
     padding: 12px 16px;
     border-radius: 20px;
