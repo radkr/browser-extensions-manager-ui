@@ -40,21 +40,36 @@
   outline: 2px solid var(--red-400);
 }
 
-.button:hover {
+.buttonSelected {
+  background-color: var(--red-700);
+  color: var(--neutral-0);
+}
+
+.button:active {
   background-color: var(--neutral-100);
   color: var(--neutral-600);
   cursor: pointer;
 }
 
-.buttonActive {
-  background-color: var(--red-700);
-  color: var(--neutral-0);
-}
-
-.buttonActive:hover {
+.buttonSelected:active {
   background-color: var(--red-500);
   color: var(--neutral-0);
   cursor: pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--neutral-100);
+    color: var(--neutral-600);
+    cursor: pointer;
+  }
+
+  .buttonSelected:hover {
+    background-color: var(--red-500);
+    color: var(--neutral-0);
+    cursor: pointer;
+  }
 }
 
 /*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/

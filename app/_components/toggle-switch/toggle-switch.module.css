@@ -14,18 +14,21 @@
   outline: 2px solid var(--red-400);
 }
 
-.button:hover {
-  background-color: var(--neutral-600);
-  cursor: pointer;
-}
-
 .buttonOn {
   background-color: var(--red-700);
 }
 
-.buttonOn:hover {
-  background-color: var(--red-400);
-  cursor: pointer;
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--neutral-600);
+    cursor: pointer;
+  }
+
+  .buttonOn:hover {
+    background-color: var(--red-400);
+    cursor: pointer;
+  }
 }
 
 .thumb {

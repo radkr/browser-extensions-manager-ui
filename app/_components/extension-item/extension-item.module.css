@@ -58,9 +58,19 @@
   outline: 2px solid var(--red-400);
 }
 
-.remove:hover {
+.remove:active {
   border: none;
   background-color: var(--red-700);
   color: var(--neutral-0);
   cursor: pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .remove:hover {
+    border: none;
+    background-color: var(--red-700);
+    color: var(--neutral-0);
+    cursor: pointer;
+  }
 }
