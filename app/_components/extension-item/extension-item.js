@@ -10,7 +10,11 @@ export default function ExtensionItem({ extension }) {
     <li className={styles.itemCard}>
       <div className={styles.infoBox}>
         <Image
-          src={`/images/${extension.logo}`}
+          src={`${
+            process.env.NODE_ENV === "production"
+              ? "/browser-extensions-manager-ui"
+              : ""
+          }/images/${extension.logo}`}
           alt={`${extension.name} logo`}
           width={60}
           height={60}
