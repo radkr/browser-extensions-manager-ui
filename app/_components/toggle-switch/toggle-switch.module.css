@@ -1,32 +1,31 @@
 .button {
   appearance: none;
   width: 40px;
-  height: 24px;
+  height: 20px;
   border: none;
-  border: 2px solid var(--neutral-0);
   border-radius: 12px;
   position: relative;
-  background-color: var(--neutral-300);
+  background-color: var(--color-toggle-button-bg-off);
 }
 
 .button:focus-visible {
-  border: 2px solid var(--neutral-0);
-  outline: 2px solid var(--red-400);
+  outline: 2px solid var(--color-button-outline-focus);
+  outline-offset: 2px;
 }
 
 .buttonOn {
-  background-color: var(--red-700);
+  background-color: var(--color-toggle-button-bg-on);
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    background-color: var(--neutral-600);
+    background-color: var(--color-toggle-button-bg-off-active);
     cursor: pointer;
   }
 
   .buttonOn:hover {
-    background-color: var(--red-400);
+    background-color: var(--color-toggle-button-bg-on-active);
     cursor: pointer;
   }
 }
@@ -38,7 +37,7 @@
   position: absolute;
   left: 2px;
   top: 2px;
-  background-color: var(--neutral-0);
+  background-color: var(--color-toggle-button-thumb);
 }
 
 .buttonOn .thumb {

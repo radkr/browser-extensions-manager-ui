@@ -4,10 +4,11 @@
   height: 200px;
   max-width: 380px;
   min-width: 288px;
+  border: 1px solid var(--color-card-border);
   border-radius: 18px;
   padding: 20px;
-  background-color: var(--neutral-0);
-  box-shadow: 0 0 4px 0 var(--neutral-300);
+  background-color: var(--color-card-bg);
+  box-shadow: 0px 2px 2px 0 var(--color-shadow);
   display: grid;
   grid-template-rows: 1fr auto;
 }
@@ -21,14 +22,14 @@
 .name {
   font-size: 20px;
   letter-spacing: -0.3px;
-  color: var(--neutral-900);
+  color: var(--color-card-name);
   margin-bottom: 6px;
 }
 
 .description {
   font-size: 16px;
   letter-spacing: -0.5px;
-  color: var(--neutral-600);
+  color: var(--color-card-description);
 }
 
 .controlBox {
@@ -42,26 +43,28 @@
 .remove {
   appearance: none;
   height: 38px;
-  border: 1px solid var(--neutral-300);
+  border: 1px solid var(--color-push-button-border);
   border-radius: 20px;
   padding: 0 15px;
   font-family: var(--font-noto-sans);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.4px;
-  background-color: var(--neutral-0);
+  background-color: var(--color-push-button-bg);
+  color: var(--color-push-button-text);
 }
 
 .remove:focus-visible {
-  background-color: var(--neutral-100);
-  border: 2px solid var(--neutral-0);
-  outline: 2px solid var(--red-400);
+  background-color: var(--color-push-button-bg-focus);
+  border: none;
+  outline: 2px solid var(--color-button-outline-focus);
+  outline-offset: 2px;
 }
 
 .remove:active {
   border: none;
-  background-color: var(--red-700);
-  color: var(--neutral-0);
+  background-color: var(--color-push-button-bg-active);
+  color: var(--color-push-button-text-active);
   cursor: pointer;
 }
 
@@ -69,8 +72,8 @@
 @media (hover: hover) and (pointer: fine) {
   .remove:hover {
     border: none;
-    background-color: var(--red-700);
-    color: var(--neutral-0);
+    background-color: var(--color-push-button-bg-active);
+    color: var(--color-push-button-text-active);
     cursor: pointer;
   }
 }

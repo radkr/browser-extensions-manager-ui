@@ -1,0 +1,26 @@
+.themeButton {
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--color-theme-button-bg);
+}
+
+.themeButton:focus-visible {
+  outline: 2px solid var(--color-button-outline-focus);
+  outline-offset: 2px;
+}
+
+.themeButton:active {
+  background-color: var(--color-theme-button-bg-active);
+  cursor: pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .themeButton:hover {
+    background-color: var(--color-theme-button-bg-active);
+    cursor: pointer;
+  }
+}

@@ -15,6 +15,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
     - [Iteration 1](#iteration-1)
     - [Iteration 2](#iteration-2)
     - [Iteration 3](#iteration-3)
+    - [Iteration 4](#iteration-4)
   - [What I learned](#what-i-learned)
     - [Touchscreen devices and sticky hover](#touchscreen-devices-and-sticky-hover)
   - [Useful resources](#useful-resources)
@@ -61,6 +62,10 @@ See the styled page on my desktop device.
 
 See the styled page on my tablet device.
 
+### Iteration 4
+
+Switch between dark mode and light mode.
+
 ## What I learned
 
 ### Touchscreen devices and sticky hover
@@ -100,6 +105,20 @@ Example media query I finally used in my design for hover states:
 }
 ```
 
+### Server and Client side components
+
+_"We established earlier that any component imported from a Client Component would itself become a Client Component. So… how do you make a Server Component a child of a Client Component? Long story short, pass Server Components as children or props instead of importing them. The Server Component will be rendered on the server, serialized, and sent to your Client Component."_ [Everything I wish I knew before moving 50,000 lines of code to React Server Components](https://www.mux.com/blog/what-are-react-server-components#1-add-use-client-directive-to-the-root-of-your-app)
+
+_"If you want to be extra sure that your Server Component will never get included in a bundle, you can import the server-only package. This is extra handy if you want to make sure a large library or a secret key doesn’t end up where it shouldn’t. (Though if you’re using Next.js, it will protect you from accidentally shipping your environment variables.)"_ [Everything I wish I knew before moving 50,000 lines of code to React Server Components](https://www.mux.com/blog/what-are-react-server-components#1-add-use-client-directive-to-the-root-of-your-app)
+
+_"If you want to know during runtime if the component is being rendered on the server or client. you can check if window is defined or not:"_ [How do I know if I'm on the client or server component in the code. Nextjs 13 Beta appDir](https://stackoverflow.com/questions/75081888/how-do-i-know-if-im-on-the-client-or-server-component-in-the-code-nextjs-13-be)
+
+```javascript
+const componentType = typeof window === "undefined" ? "server" : "client";
+```
+
+_"You can use process.browser to distinguish between server environment (NodeJS) and client environment (browser). `process.browser` is `true` on the client and `undefined` on the server."_ [How do I detect whether I am on server on client in next.js?](https://stackoverflow.com/questions/49411796/how-do-i-detect-whether-i-am-on-server-on-client-in-next-js)
+
 ## Useful resources
 
 **Sticky hover:**
@@ -107,3 +126,8 @@ Example media query I finally used in my design for hover states:
 - [Finally, a CSS only solution to :hover on touchscreens](https://itnext.io/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c)
 - [Solving Sticky Hover States with @media (hover: hover)](https://css-tricks.com/solving-sticky-hover-states-with-media-hover-hover/)
 - [A Guide To Hover And Pointer Media Queries](https://www.smashingmagazine.com/2022/03/guide-hover-pointer-media-queries/)
+
+**Server and Client side components:**
+
+- [Everything I wish I knew before moving 50,000 lines of code to React Server Components](https://www.mux.com/blog/what-are-react-server-components#1-add-use-client-directive-to-the-root-of-your-app)
+- [Server and Client Composition Patterns](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#keeping-server-only-code-out-of-the-client-environment)
