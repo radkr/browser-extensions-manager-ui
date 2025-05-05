@@ -18,6 +18,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
     - [Iteration 4](#iteration-4)
     - [Iteration 5](#iteration-5)
     - [Iteration 6](#iteration-6)
+    - [Iteration 7](#iteration-7)
   - [What I learned](#what-i-learned)
     - [Touchscreen devices and sticky hover](#touchscreen-devices-and-sticky-hover)
   - [Useful resources](#useful-resources)
@@ -77,6 +78,10 @@ Filter for active or inactive extensions and set an extension to active or inact
 ### Iteration 6
 
 Remove an extension from the browser.
+
+### Iteration 7
+
+Ask for confirmation before an extension removal.
 
 ## What I learned
 

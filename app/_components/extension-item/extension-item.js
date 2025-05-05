@@ -9,7 +9,7 @@ import ToggleSwitch from "@/app/_components/toggle-switch/toggle-switch";
 import SecondaryButton from "@/app/_components/secondary-button/secondary-button";
 
 export default function ExtensionItem({ extension }) {
-  const { toggleActive, remove } = use(ExtensionsContext);
+  const { toggleActive, toRemove } = use(ExtensionsContext);
 
   console.log("From item:", extension);
 
@@ -34,7 +34,7 @@ export default function ExtensionItem({ extension }) {
       <div className={styles.controlBox}>
         <SecondaryButton
           onClick={() => {
-            remove(extension.name);
+            toRemove(extension.name);
           }}
         >
           Remove

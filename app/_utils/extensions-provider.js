@@ -9,10 +9,14 @@ export const ExtensionsContext = createContext({
   setFilter: () => {},
   toggleActive: () => {},
   remove: () => {},
+  toRemove: () => {},
+  cancelRemove: () => {},
+  aboutToRemove: null,
 });
 
 export default function ExtensionsProvider({ children }) {
   const [extensions, setExtensions] = useState(extensionsList);
+  const [aboutToRemove, setAboutToRemove] = useState(null);
   const [currentFilter, setCurrentFilter] = useState("ALL");
 
   const filteredExtensions = extensions.filter((extension) => {
@@ -51,6 +55,15 @@ export default function ExtensionsProvider({ children }) {
         (extension) => !(extension.name === extensionName)
       );
     });
+    setAboutToRemove(null);
+  }
+
+  function toRemove(extensionName) {
+    setAboutToRemove(extensionName);
+  }
+
+  function cancelRemove() {
+    setAboutToRemove(null);
   }
 
   const extensionsValue = {
@@ -59,6 +72,9 @@ export default function ExtensionsProvider({ children }) {
     setFilter: setFilter,
     toggleActive: toggleActive,
     remove: remove,
+    toRemove: toRemove,
+    cancelRemove: cancelRemove,
+    aboutToRemove: aboutToRemove,
   };
 
   return (
