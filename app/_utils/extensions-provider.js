@@ -8,6 +8,7 @@ export const ExtensionsContext = createContext({
   extensions: [],
   setFilter: () => {},
   toggleActive: () => {},
+  remove: () => {},
 });
 
 export default function ExtensionsProvider({ children }) {
@@ -43,11 +44,21 @@ export default function ExtensionsProvider({ children }) {
     });
   }
 
+  function remove(extensionName) {
+    console.log(`Remove ${extensionName} extension.`);
+    setExtensions((previous) => {
+      return previous.filter(
+        (extension) => !(extension.name === extensionName)
+      );
+    });
+  }
+
   const extensionsValue = {
     extensions: filteredExtensions,
     filter: currentFilter,
     setFilter: setFilter,
     toggleActive: toggleActive,
+    remove: remove,
   };
 
   return (

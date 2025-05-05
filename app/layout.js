@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${notoSans.variable}`}>
+        <div id="modal-root" />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

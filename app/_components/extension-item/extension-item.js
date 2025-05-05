@@ -5,10 +5,11 @@ import { use } from "react";
 import { ExtensionsContext } from "@/app/_utils/extensions-provider";
 
 import styles from "./extension-item.module.css";
-import ToggleSwitch from "../toggle-switch/toggle-switch";
+import ToggleSwitch from "@/app/_components/toggle-switch/toggle-switch";
+import SecondaryButton from "@/app/_components/secondary-button/secondary-button";
 
 export default function ExtensionItem({ extension }) {
-  const { toggleActive } = use(ExtensionsContext);
+  const { toggleActive, remove } = use(ExtensionsContext);
 
   console.log("From item:", extension);
 
@@ -31,7 +32,13 @@ export default function ExtensionItem({ extension }) {
         </div>
       </div>
       <div className={styles.controlBox}>
-        <button className={styles.remove}>Remove</button>
+        <SecondaryButton
+          onClick={() => {
+            remove(extension.name);
+          }}
+        >
+          Remove
+        </SecondaryButton>
         <ToggleSwitch
           on={extension.isActive}
           onToggle={() => {

@@ -29,11 +29,13 @@
   --color-selector-button-text-off: var(--neutral-900);
   --color-selector-button-bg-off-active: var(--neutral-100);
   --color-selector-button-text-off-active: var(--neutral-600);
+  --color-selector-button-bg-off-focus: var(--neutral-0);
 
   --color-selector-button-bg-on: var(--red-700);
   --color-selector-button-text-on: var(--neutral-0);
   --color-selector-button-bg-on-active: var(--red-500);
   --color-selector-button-text-on-active: var(--neutral-0);
+  --color-selector-button-bg-on-focus: var(--red-700);
 
   --color-card-bg: var(--neutral-0);
   --color-card-border: var(--neutral-200);

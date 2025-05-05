@@ -17,6 +17,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
     - [Iteration 3](#iteration-3)
     - [Iteration 4](#iteration-4)
     - [Iteration 5](#iteration-5)
+    - [Iteration 6](#iteration-6)
   - [What I learned](#what-i-learned)
     - [Touchscreen devices and sticky hover](#touchscreen-devices-and-sticky-hover)
   - [Useful resources](#useful-resources)
@@ -72,6 +73,10 @@ Switch between dark mode and light mode.
 ### Iteration 5
 
 Filter for active or inactive extensions and set an extension to active or inactive.
+
+### Iteration 6
+
+Remove an extension from the browser.
 
 ## What I learned
 
