@@ -6,7 +6,7 @@ import { ExtensionsContext } from "@/app/_utils/extensions-provider";
 
 import styles from "./extension-item.module.css";
 import ToggleSwitch from "@/app/_components/toggle-switch/toggle-switch";
-import SecondaryButton from "@/app/_components/secondary-button/secondary-button";
+import Button from "@/app/_components/button/button";
 
 export default function ExtensionItem({ extension }) {
   const { toggleActive, toRemove } = use(ExtensionsContext);
@@ -32,13 +32,14 @@ export default function ExtensionItem({ extension }) {
         </div>
       </div>
       <div className={styles.controlBox}>
-        <SecondaryButton
+        <Button
+          styleId="secondary"
           onClick={() => {
             toRemove(extension.name);
           }}
         >
           Remove
-        </SecondaryButton>
+        </Button>
         <ToggleSwitch
           on={extension.isActive}
           onToggle={() => {

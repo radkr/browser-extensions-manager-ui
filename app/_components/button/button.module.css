@@ -1,0 +1,88 @@
+.button {
+  appearance: none;
+  height: 38px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-family: var(--font-noto-sans);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.primary {
+  background-color: var(--color-primary-button-bg);
+  color: var(--color-primary-button-txt);
+}
+
+.secondary {
+  background-color: var(--color-secondary-button-bg);
+  color: var(--color-secondary-button-txt);
+  border: 1px solid var(--color-secondary-button-br);
+}
+
+.tertiary {
+  background-color: transparent;
+  color: var(--color-tertiary-button-txt);
+}
+
+.button:focus-visible {
+  border: none;
+  outline: 2px solid var(--color-button-outline-focus);
+  outline-offset: 2px;
+}
+
+.primary:focus-visible {
+  background-color: var(--color-primary-button-bg-focus);
+}
+
+.secondary:focus-visible {
+  background-color: var(--color-secondary-button-bg-focus);
+}
+
+.tertiary:focus-visible {
+  background-color: var(--color-tertiary-button-bg-focus);
+}
+
+.button:active {
+  border: none;
+  cursor: pointer;
+}
+
+.primary:active {
+  background-color: var(--color-primary-button-bg-active);
+  color: var(--color-primary-button-txt-active);
+}
+
+.secondary:active {
+  background-color: var(--color-secondary-button-bg-active);
+  color: var(--color-secondary-button-txt-active);
+}
+
+.tertiary:active {
+  text-decoration: underline;
+  color: var(--color-tertiary-button-txt-active);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    border: none;
+    cursor: pointer;
+  }
+
+  .primary:hover {
+    background-color: var(--color-primary-button-bg-active);
+    color: var(--color-primary-button-txt-active);
+  }
+
+  .secondary:hover {
+    background-color: var(--color-secondary-button-bg-active);
+    color: var(--color-secondary-button-txt-active);
+  }
+
+  .tertiary:hover {
+    text-decoration: underline;
+    color: var(--color-tertiary-button-txt-active);
+  }
+}

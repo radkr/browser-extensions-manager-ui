@@ -55,10 +55,27 @@
   --color-toggle-button-bg-on-active: var(--red-400);
   --color-toggle-button-thumb: var(--neutral-0);
 
-  --color-button-border-focus: var(--neutral-0);
   --color-button-outline-focus: var(--red-400);
 
   --color-shadow: var(--neutral-200);
+
+  /*Button colors*/
+  --color-primary-button-bg: var(--red-700);
+  --color-primary-button-txt: var(--neutral-0);
+  --color-primary-button-bg-focus: var(--red-700);
+  --color-primary-button-bg-active: var(--red-500);
+  --color-primary-button-txt-active: var(--neutral-0);
+
+  --color-secondary-button-bg: var(--neutral-0);
+  --color-secondary-button-txt: var(--neutral-900);
+  --color-secondary-button-br: var(--neutral-300);
+  --color-secondary-button-bg-focus: var(--neutral-100);
+  --color-secondary-button-bg-active: var(--red-700);
+  --color-secondary-button-txt-active: var(--neutral-0);
+
+  --color-tertiary-button-txt: var(--neutral-900);
+  --color-tertiary-button-bg-focus: var(--neutral-100);
+  --color-tertiary-button-txt-active: var(--neutral-900);
 }
 
 [data-theme="dark"] {
@@ -104,6 +121,24 @@
   --color-button-outline-focus: var(--red-400);
 
   --color-shadow: var(--neutral-800);
+
+  /*Button colors*/
+  --color-primary-button-bg: var(--red-400);
+  --color-primary-button-txt: var(--neutral-900);
+  --color-primary-button-bg-focus: var(--red-400);
+  --color-primary-button-bg-active: var(--red-500);
+  --color-primary-button-txt-active: var(--neutral-900);
+
+  --color-secondary-button-bg: var(--neutral-700);
+  --color-secondary-button-txt: var(--neutral-0);
+  --color-secondary-button-br: var(--neutral-600);
+  --color-secondary-button-bg-focus: var(--neutral-600);
+  --color-secondary-button-bg-active: var(--red-400);
+  --color-secondary-button-txt-active: var(--neutral-900);
+
+  --color-tertiary-button-txt: var(--neutral-0);
+  --color-tertiary-button-bg-focus: var(--neutral-600);
+  --color-tertiary-button-txt-active: var(--neutral-0);
 }
 
 * {
