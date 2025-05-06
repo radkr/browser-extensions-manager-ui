@@ -2,19 +2,19 @@
   list-style: none;
   display: grid;
   justify-content: center;
-  column-gap: 12px;
-  row-gap: 12px;
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
 }
 
 /*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
-@media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
+@media (min-width: calc(2 * 18rem + 1 * 0.75rem + 2 * 1rem)) {
   .extensionList {
     grid-template-columns: auto auto;
   }
 }
 
 /*3 * itemMinWidth + 2 * columnGap + 2 * pagePadding*/
-@media (min-width: calc(3 * 288px + 2 * 12px + 2 * 16px)) {
+@media (min-width: calc(3 * 18rem + 2 * 0.75rem + 2 * 1rem)) {
   .extensionList {
     grid-template-columns: auto auto auto;
   }

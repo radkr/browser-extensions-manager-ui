@@ -41,7 +41,7 @@ export default function ThemeChanger() {
 
   return (
     <button className={styles.themeButton} aria-label={label} onClick={handler}>
-      <Image src={src} alt={alt} />
+      <Image src={src} alt={alt} className={styles.themeIcon} />
     </button>
   );
 }

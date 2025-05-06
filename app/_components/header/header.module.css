@@ -1,7 +1,7 @@
 .header {
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--color-header-border);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: var(--color-header-bg);
   display: flex;
   flex-direction: row;
@@ -11,9 +11,9 @@
 }
 
 /*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
-@media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
+@media (min-width: calc(2 * 18rem + 1 * 0.75rem + 2 * 1rem)) {
   .header {
-    padding: 12px 16px;
-    border-radius: 20px;
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
   }
 }

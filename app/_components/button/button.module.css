@@ -1,11 +1,11 @@
 .button {
   appearance: none;
-  height: 38px;
+  height: 2.375rem;
   border: none;
-  border-radius: 20px;
-  padding: 0 15px;
+  border-radius: 1.25rem;
+  padding: 0 0.9375rem;
   font-family: var(--font-noto-sans);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.4px;
 }

@@ -25,6 +25,7 @@ export default function ExtensionItem({ extension }) {
           alt={`${extension.name} logo`}
           width={60}
           height={60}
+          className={styles.icon}
         />
         <div>
           <h2 className={styles.name}> {extension.name}</h2>

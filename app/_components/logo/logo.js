@@ -7,6 +7,8 @@ import Image from "next/image";
 import logoLight from "@/public/images/logo.svg";
 import logoDark from "@/public/images/logo-dark.svg";
 
+import styles from "./logo.module.css";
+
 export default function Logo() {
   const [isMounted, setIsMounted] = useState(false);
   const { resolvedTheme } = useTheme();
@@ -32,5 +34,5 @@ export default function Logo() {
       src = logoDark;
   }
 
-  return <Image src={src} alt="Extensions logo" />;
+  return <Image src={src} alt="Extensions logo" className={styles.logo} />;
 }

@@ -1,33 +1,38 @@
 .itemCard {
   font-family: var(--font-noto-sans);
-  font-size: 16px;
-  height: 200px;
-  max-width: 380px;
-  min-width: 288px;
+  font-size: 1rem;
+  height: 12.5rem;
+  max-width: 23.75rem;
+  min-width: 18rem;
   border: 1px solid var(--color-card-border);
-  border-radius: 18px;
-  padding: 20px;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
   background-color: var(--color-card-bg);
   box-shadow: 0px 2px 2px 0 var(--color-shadow);
   display: grid;
   grid-template-rows: 1fr auto;
 }
 
+.icon {
+  height: 3.75rem;
+  width: 3.75rem;
+}
+
 .infoBox {
   display: grid;
-  grid-template-columns: 60px 1fr;
-  column-gap: 16px;
+  grid-template-columns: 3.75rem 1fr;
+  column-gap: 1rem;
 }
 
 .name {
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: -0.3px;
   color: var(--color-card-name);
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
   color: var(--color-card-description);
 }
