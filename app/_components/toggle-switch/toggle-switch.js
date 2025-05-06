@@ -14,6 +14,7 @@ export default function ToggleSwitch({ on, onToggle }) {
         setIsOn((prev) => !prev);
         onToggle();
       }}
+      aria-label={on ? "Set inactive" : "Set active"}
     >
       <div className={styles.thumb} />
     </button>

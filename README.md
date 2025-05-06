@@ -2,6 +2,36 @@
 
 This is a solution to the [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+With my solution I went a bit further and created a
+
+- Next.js site deployed on github pages that is
+- dinamically adjusts to the default theme of the device or can be set to dark or light mode manually,
+- dinamically adjusts to the browser's default font size and is
+- reponsive but still
+- stick to the Frontend Mentor's design when the default font size is 16px.
+
+Before removing an extension, my Browser extensions manager
+
+- asks for confirmation in a modal that is a
+- React functional component
+- inserted into a Modal component
+- shown when the user clicks on the remove button and
+- hide on pressing the ESC key or clicking on the backdrop, on the cancel button or on the remove button.
+
+I created my own Modal Component as well that is
+
+- built upon the `dialog` html element
+- directly injected into the DOM element with id `modal-root` and
+- for accessibility reasons,
+- uses the standard `showModal()` and `close()` functions to show and hide the modal.
+
+The manual integration, end-toend, and accessibility tests increase the confidence that the site works as intended.
+
+_In this practice project, to allow for a broader exploration of different technologies within a limited timeframe, unit tests for the React components were not implemented. However, I have experience writing comprehensive unit tests for React components, and you can see examples of this in the following projects:_
+
+- [Intro component with sign-up form](https://github.com/radkr/intro-component-with-signup-form) or
+- [QR code component](https://github.com/radkr/qr-code-component-main)
+
 # Table of contents
 
 - [Overview](#overview)
@@ -19,6 +49,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
     - [Iteration 5](#iteration-5)
     - [Iteration 6](#iteration-6)
     - [Iteration 7](#iteration-7)
+    - [Iteration 8](#iteration-8)
   - [What I learned](#what-i-learned)
     - [Touchscreen devices and sticky hover](#touchscreen-devices-and-sticky-hover)
   - [Useful resources](#useful-resources)
@@ -27,10 +58,34 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 ## Screenshot
 
+**Light desktop view:**
+
+![Screenshot about light desktop view](./screenshots/desktop-light.png)
+
+**Light tablet view:**
+
+![Screenshot about light tablet view](./screenshots/tablet-light.png)
+
+**Light mobile view:**
+
+![Screenshot about light mobile view](./screenshots/mobile-light.png)
+
+**Dark tablet view:**
+
+![Screenshot about dark tablet view](./screenshots/tablet-dark.png)
+
+**Light tablet view with confirmation modal:**
+
+![Screenshot about light tablet view with confirmation modal](./screenshots/tablet-light-modal.png)
+
+**Dark tablet view with confirmation modal:**
+
+![Screenshot about dark tablet view with confirmation modal](./screenshots/tablet-dark-modal.png)
+
 ## Links
 
 - Solution URL: [TODO - On Frontend Mentor](#)
-- Live Site URL: [TODO - On Github Pages](https://radkr.github.io/browser-extensions-manager-ui/)
+- Live Site URL: [On Github Pages](https://radkr.github.io/browser-extensions-manager-ui/)
 
 # My process
 
@@ -42,15 +97,11 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 - Responsive design (media query)
 - Dark theme (next-theme)
 - Next.js (server and client components)
-- React.js (Context API)
-
-## Improved with
-
-- TODO - Autoprefixer to increase browser coverage
+- React.js (Context API, create portal)
 
 ## Tested with
 
-- TODO - WAVE Web Accessibility Evaluation Tool
+- WAVE Web Accessibility Evaluation Tool
 - Jest + React Testing Library + User Event Testing Library
 
 ## Iterations
@@ -82,6 +133,10 @@ Remove an extension from the browser.
 ### Iteration 7
 
 Ask for confirmation before an extension removal.
+
+### Iteration 8
+
+Change the default font size setting.
 
 ## What I learned
 

@@ -138,7 +138,7 @@ body {
   /*itemMinWidth + 2 *sidePadding*/
   min-width: calc(18rem + 2 * 1rem);
   /*itemMaxWidth + 2 *sidePadding*/
-  max-width: calc(23.75rem + 2 * 1rem);
+  max-width: calc(23.875rem + 2 * 1rem);
   padding: 1.25rem 1rem 4rem 1rem;
 }
 
@@ -147,7 +147,7 @@ body {
   body {
     padding-top: 40px;
     /*2 * itemMaxWidth + 1 * columnGap + 2 *sidePadding*/
-    max-width: calc(2 * 23.75rem + 1 * 0.75rem + 2 * 1rem);
+    max-width: calc(2 * 23.875rem + 1 * 0.75rem + 2 * 1rem);
   }
 }
 
@@ -155,6 +155,6 @@ body {
 @media (min-width: calc(3 * 18rem + 2 * 0.75rem + 2 * 1rem)) {
   body {
     /*3 * itemMaxWidth + 2 * columnGap + 2 *sidePadding*/
-    max-width: calc(3 * 23.75rem + 2 * 0.75rem + 2 * 1rem);
+    max-width: calc(3 * 23.875rem + 2 * 0.75rem + 2 * 1rem);
   }
 }
