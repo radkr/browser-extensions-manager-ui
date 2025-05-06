@@ -16,7 +16,7 @@ export default function ToggleSwitch({ on, onToggle }) {
       }}
       aria-label={on ? "Set inactive" : "Set active"}
     >
-      <div className={styles.thumb} />
+      <span className={styles.thumb} />
     </button>
   );
 }
