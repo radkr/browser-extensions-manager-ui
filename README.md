@@ -84,7 +84,7 @@ _In this practice project, to allow for a broader exploration of different techn
 
 ## Links
 
-- Solution URL: [TODO - On Frontend Mentor](#)
+- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-extension-manager-with-dark-theme-MxrpdCeIhp)
 - Live Site URL: [On Github Pages](https://radkr.github.io/browser-extensions-manager-ui/)
 
 # My process
