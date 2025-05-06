@@ -23,64 +23,6 @@
   column-gap: 16px;
 }
 
-.button {
-  appearance: none;
-  font-family: var(--font-noto-sans);
-  font-size: 20px;
-  letter-spacing: -0.2px;
-  background-color: var(--color-selector-button-bg-off);
-  color: var(--color-selector-button-text-off);
-  height: 45px;
-  border: none;
-  border-radius: 22px;
-  padding: 0 18px;
-  box-shadow: 0px 2px 2px 0 var(--color-shadow);
-}
-
-.button:focus-visible {
-  background-color: var(--color-selector-button-bg-off-focus);
-  outline: 2px solid var(--color-button-outline-focus);
-  outline-offset: 2px;
-}
-
-.buttonSelected {
-  background-color: var(--color-selector-button-bg-on);
-  color: var(--color-selector-button-text-on);
-}
-
-.button:active {
-  background-color: var(--color-selector-button-bg-off-active);
-  color: var(--color-selector-button-text-off-active);
-  cursor: pointer;
-}
-
-.buttonSelected:active {
-  background-color: var(--color-selector-button-bg-on-active);
-  color: var(--color-selector-button-text-on-active);
-  cursor: pointer;
-}
-
-.buttonSelected:focus-visible {
-  background-color: var(--color-selector-button-bg-on-focus);
-  outline: 2px solid var(--color-button-outline-focus);
-  outline-offset: 2px;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .button:hover {
-    background-color: var(--color-selector-button-bg-off-active);
-    color: var(--color-selector-button-text-off-active);
-    cursor: pointer;
-  }
-
-  .buttonSelected:hover {
-    background-color: var(--color-selector-button-bg-on-active);
-    color: var(--color-selector-button-text-on-active);
-    cursor: pointer;
-  }
-}
-
 /*2 * itemMinWidth + 1 * columnGap + 2 * pagePadding*/
 @media (min-width: calc(2 * 288px + 1 * 12px + 2 * 16px)) {
   .controlBar {

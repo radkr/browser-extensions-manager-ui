@@ -4,6 +4,7 @@ import { use } from "react";
 
 import styles from "./control-bar.module.css";
 import { ExtensionsContext } from "@/app/_utils/extensions-provider";
+import ToggleButton from "@/app/_components/toggle-button/toggle-button";
 
 export default function ControlBar() {
   const { filter, setFilter } = use(ExtensionsContext);
@@ -14,36 +15,30 @@ export default function ControlBar() {
     <div className={styles.controlBar}>
       <h1 className={styles.title}>Extensions List</h1>
       <div className={styles.filter}>
-        <button
-          className={`${styles.button} ${
-            filter == "ALL" ? styles.buttonSelected : ""
-          }`}
-          onClick={() => {
+        <ToggleButton
+          on={filter == "ALL"}
+          onToggle={() => {
             setFilter("ALL");
           }}
         >
           All
-        </button>
-        <button
-          className={`${styles.button} ${
-            filter == "ACTIVE" ? styles.buttonSelected : ""
-          }`}
-          onClick={() => {
+        </ToggleButton>
+        <ToggleButton
+          on={filter == "ACTIVE"}
+          onToggle={() => {
             setFilter("ACTIVE");
           }}
         >
           Active
-        </button>
-        <button
-          className={`${styles.button} ${
-            filter == "INACTIVE" ? styles.buttonSelected : ""
-          }`}
-          onClick={() => {
+        </ToggleButton>
+        <ToggleButton
+          on={filter == "INACTIVE"}
+          onToggle={() => {
             setFilter("INACTIVE");
           }}
         >
           Inactive
-        </button>
+        </ToggleButton>
       </div>
     </div>
   );

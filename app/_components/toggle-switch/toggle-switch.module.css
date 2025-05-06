@@ -5,7 +5,7 @@
   border: none;
   border-radius: 12px;
   position: relative;
-  background-color: var(--color-toggle-button-bg-off);
+  background-color: var(--color-toggle-switch-bg-off);
 }
 
 .button:focus-visible {
@@ -14,18 +14,18 @@
 }
 
 .buttonOn {
-  background-color: var(--color-toggle-button-bg-on);
+  background-color: var(--color-toggle-switch-bg-on);
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    background-color: var(--color-toggle-button-bg-off-active);
+    background-color: var(--color-toggle-switch-bg-off-active);
     cursor: pointer;
   }
 
   .buttonOn:hover {
-    background-color: var(--color-toggle-button-bg-on-active);
+    background-color: var(--color-toggle-switch-bg-on-active);
     cursor: pointer;
   }
 }
@@ -37,7 +37,7 @@
   position: absolute;
   left: 2px;
   top: 2px;
-  background-color: var(--color-toggle-button-thumb);
+  background-color: var(--color-toggle-switch-thumb);
 }
 
 .buttonOn .thumb {
